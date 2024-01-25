@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bedu.controller.InterviewerControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-01-25T02:19:20" hostname="MacBook-Air-de-Anastacio.local" time="0.301">
+  <properties/>
+  <testcase name="Controller should be injected" classname="org.bedu.controller.InterviewerControllerTest" time="0.129"/>
+  <testcase name="Controller should save an interviewer" classname="org.bedu.controller.InterviewerControllerTest" time="0.126"/>
+  <testcase name="Controller should be list of interviewers" classname="org.bedu.controller.InterviewerControllerTest" time="0.022"/>
+  <system-out><![CDATA[2024-01-24T20:19:17.095-06:00  INFO 82589 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.bedu.controller.InterviewerControllerTest]: InterviewerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-24T20:19:17.124-06:00  INFO 82589 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.bedu.Application for test class org.bedu.controller.InterviewerControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-01-24T20:19:17.187-06:00  INFO 82589 --- [    Test worker] o.b.c.InterviewerControllerTest          : Starting InterviewerControllerTest using Java 17.0.9 with PID 82589 (started by abc in /Users/abc/Documents/santander-java-testing-20232-quality)
+2024-01-24T20:19:17.188-06:00  INFO 82589 --- [    Test worker] o.b.c.InterviewerControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2024-01-24T20:19:17.629-06:00  INFO 82589 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-24T20:19:17.655-06:00  INFO 82589 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-01-24T20:19:18.934-06:00  INFO 82589 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-24T20:19:18.964-06:00  INFO 82589 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-24T20:19:18.991-06:00  INFO 82589 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-24T20:19:19.008-06:00  INFO 82589 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-24T20:19:19.010-06:00  INFO 82589 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.sqlite.jdbc4.JDBC4Connection@19c6e821
+2024-01-24T20:19:19.012-06:00  INFO 82589 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+Hibernate: 
+    create table HTE_interviewers(rn_ integer not null, id bigint, hib_sess_id char(36) not null, email varchar(255), name varchar(255), primary key (rn_, hib_sess_id))
+2024-01-24T20:19:19.185-06:00  INFO 82589 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-24T20:19:19.201-06:00  INFO 82589 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-24T20:19:19.501-06:00  WARN 82589 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-24T20:19:20.608-06:00  INFO 82589 --- [    Test worker] o.b.c.InterviewerControllerTest          : Started InterviewerControllerTest in 3.468 seconds (process running for 18.096)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
